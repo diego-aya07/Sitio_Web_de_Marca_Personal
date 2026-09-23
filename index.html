@@ -7,85 +7,83 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Aquí conectamos el archivo de estilos -->
+  <!-- Aqui conectamos el archivo de estilos -->
   <link rel="stylesheet" href="diseno.css">
 </head>
 <body>
 
-  <!-- BARRA DE NAVEGACIÓN -->
+  <!-- BARRA DE NAVEGACION -->
   <header>
     <div class="contenedor barra">
-      <a href="#inicio" class="nombre"><!-- EDITA AQUÍ: tu nombre -->Tu Nombre</a>
+      <a href="#inicio" class="nombre">Diego Ayala</a>
 
       <ul class="menu" id="menu">
-        <li><a href="#formacion">Formación académica</a></li>
-        <li><a href="#logros">Logros académicos</a></li>
+        <li><a href="#formacion">Formacion academica</a></li>
+        <li><a href="#logros">Logros academicos</a></li>
         <li><a href="#voluntariado">Voluntariado</a></li>
         <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#curriculo">Currículo</a></li>
+        <li><a href="#curriculo">Curriculo</a></li>
       </ul>
-
-      <button id="botonMenu">☰</button>
     </div>
   </header>
 
-  <!-- SECCIÓN DE INICIO -->
+  <!-- SECCION DE INICIO -->
   <section id="inicio" class="hero">
     <div class="contenedor">
       <p class="etiqueta">marca personal</p>
-      <!-- EDITA AQUÍ: tu titular -->
-      <h1>Escribe aquí tu titular en una frase.</h1>
-      <!-- EDITA AQUÍ: párrafo(s) sobre ti -->
-      <p>Hola, soy [tu nombre]. Escribe aquí quién eres y qué te caracteriza.</p>
-      <p>Escribe un segundo párrafo sobre lo que te interesa o hacia dónde vas.</p>
-      <img src=""
+      <!-- EDITA AQUI: tu titular -->
+      <h1>Escribe aqui tu titular en una frase.</h1>
+      <!-- EDITA AQUI: parrafo(s) sobre ti -->
+      <p>Hola, soy [tu nombre]. Escribe aqui quien eres y que te caracteriza.</p>
+      <p>Escribe un segundo parrafo sobre lo que te interesa o hacia donde vas.</p>
+      <img src="foto.jpeg" aling>
     </div>
   </section>
 
-  <!-- FORMACIÓN ACADÉMICA -->
+  <!-- FORMACION ACADEMICA -->
   <section id="formacion" class="seccion">
     <div class="contenedor">
-      <h2>Formación académica</h2>
+      <h2>Formacion academica</h2>
 
       <div class="fila">
         <strong>Bachillerato</strong>
-        <span><!-- EDITA AQUÍ -->Institución, especialidad y años</span>
+        <span><!-- EDITA AQUI -->Institucion, especialidad y anos</span>
       </div>
       <div class="fila">
-        <strong>Educación básica</strong>
-        <span><!-- EDITA AQUÍ -->Institución y años</span>
+        <strong>Educacion basica</strong>
+        <span><!-- EDITA AQUI -->Institucion y anos</span>
       </div>
       <div class="fila">
-        <strong>Kínder</strong>
-        <span><!-- EDITA AQUÍ -->Institución y año</span>
+        <strong>Kinder</strong>
+        <span><!-- EDITA AQUI -->Institucion y ano</span>
       </div>
       <div class="fila">
         <strong>Curso complementario</strong>
-        <span><!-- EDITA AQUÍ -->Ej. panadería, corte y confección</span>
+        <span><!-- EDITA AQUI -->Ej. panaderia, corte y confeccion</span>
       </div>
     </div>
   </section>
 
-  <!-- LOGROS ACADÉMICOS -->
+  <!-- LOGROS ACADEMICOS -->
   <section id="logros" class="seccion">
     <div class="contenedor">
-      <h2>Logros académicos</h2>
+      <h2>Logros academicos</h2>
 
       <div class="tarjetas">
         <div class="tarjeta">
           <div class="foto">Foto de medalla</div>
           <h3>Medalla</h3>
-          <p><!-- EDITA AQUÍ -->Motivo y fecha</p>
+          <p><!-- EDITA AQUI -->Motivo y fecha</p>
         </div>
         <div class="tarjeta">
           <div class="foto">Certificado</div>
           <h3>Oratoria / curso</h3>
-          <p><!-- EDITA AQUÍ -->Nombre del certificado</p>
+          <p><!-- EDITA AQUI -->Nombre del certificado</p>
         </div>
         <div class="tarjeta">
           <div class="foto">Diploma</div>
           <h3>Concurso ganado</h3>
-          <p><!-- EDITA AQUÍ -->Describe el logro</p>
+          <p><!-- EDITA AQUI -->Describe el logro</p>
         </div>
       </div>
     </div>
@@ -99,11 +97,11 @@
       <div class="tarjetas">
         <div class="tarjeta">
           <div class="foto">Foto: limpieza</div>
-          <p><!-- EDITA AQUÍ -->Descripción breve</p>
+          <p><!-- EDITA AQUI -->Descripcion breve</p>
         </div>
         <div class="tarjeta">
           <div class="foto">Foto: iglesia</div>
-          <p><!-- EDITA AQUÍ -->Descripción breve</p>
+          <p><!-- EDITA AQUI -->Descripcion breve</p>
         </div>
       </div>
     </div>
@@ -116,32 +114,32 @@
 
       <div class="botones-filtro">
         <button class="filtro activo" onclick="filtrarProyectos('todos')">Todos</button>
-        <button class="filtro" onclick="filtrarProyectos('tecnologia')">Tecnología</button>
+        <button class="filtro" onclick="filtrarProyectos('tecnologia')">Tecnologia</button>
       </div>
 
       <div class="tarjetas" id="listaProyectos">
         <div class="tarjeta proyecto" data-categoria="tecnologia">
-          <div class="foto">Hackatón</div>
-          <h3>Hackatón</h3>
-          <p><!-- EDITA AQUÍ -->Descripción breve</p>
+          <div class="foto">Hackaton</div>
+          <h3>Hackaton</h3>
+          <p><!-- EDITA AQUI -->Descripcion breve</p>
         </div>
         <div class="tarjeta proyecto" data-categoria="tecnologia">
           <div class="foto">Expo</div>
           <h3>Expo</h3>
-          <p><!-- EDITA AQUÍ -->Descripción breve</p>
+          <p><!-- EDITA AQUI -->Descripcion breve</p>
         </div>
         <div class="tarjeta proyecto" data-categoria="tecnologia">
           <div class="foto">ExpoTech</div>
           <h3>ExpoTech</h3>
-          <p><!-- EDITA AQUÍ -->Descripción breve</p>
+          <p><!-- EDITA AQUI -->Descripcion breve</p>
         </div>
       </div>
 
-  <!-- CURRÍCULO -->
+  <!-- CURRICULO -->
   <section id="curriculo" class="seccion">
     <div class="contenedor">
       <div class="caja-curriculo">
-        <h2>Descarga mi currículo o escríbeme</h2>
+        <h2>Descarga mi curriculo o escribeme</h2>
         <div class="botones-curriculo">
           <a href="#" class="boton" onclick="avisoCV(event)">Descargar CV (PDF)</a>
           <a href="mailto:tucorreo@ejemplo.com" class="boton boton-borde">Escribir correo</a>
@@ -150,7 +148,7 @@
     </div>
   </section>
 
-  <!-- Aquí conectamos el archivo de JavaScript -->
+  <!-- Aqui conectamos el archivo de JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
