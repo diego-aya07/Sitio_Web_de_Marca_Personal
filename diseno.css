@@ -28,6 +28,7 @@ header {
   background-color: #0f2a5c;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .barra {
@@ -69,26 +70,55 @@ header {
 
 /* ---------- SECCIÓN DE INICIO ---------- */
 .hero {
-  padding: 80px 0 60px 0;
+    background: #eef1f6;
+    padding: 60px 40px;
+  }
+  .hero .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0 auto;
+  }
+  .hero .texto {
+    flex: 1;
+  }
+  .etiqueta {
+    text-transform: lowercase;
+    font-family: monospace;
+    color: #4a5568;
+    margin-bottom: 8px;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #0f1a2b;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .foto-wrapper {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  overflow: hidden; 
+  flex-shrink: 0;
+  z-index: 1;
 }
 
-.etiqueta {
-  color: #2d7ff9;
-  font-size: 14px;
-  margin-bottom: 15px;
+.foto-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 1;
 }
-
-.hero h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: #5b6474;
-  max-width: 600px;
-  margin-bottom: 10px;
-}
-
 /* ---------- SECCIONES GENERALES ---------- */
 .seccion {
   padding: 50px 0;
@@ -107,6 +137,13 @@ header {
   gap: 10px;
   padding: 14px 0;
   border-bottom: 1px solid #e4e7eb;
+}
+
+.fila-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .fila span {
@@ -150,6 +187,34 @@ header {
 .tarjeta p {
   color: #5b6474;
   font-size: 14px;
+}
+
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  gap: 16px;
+  justify-content: center;
+}
+
+.tarjetas-grid .foto {
+  height: 180px;
+  padding: 6px;
+}
+
+.tarjetas-grid .foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjetas-grid .tarjeta {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .tarjetas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ---------- FILTROS DEL PORTAFOLIO ---------- */

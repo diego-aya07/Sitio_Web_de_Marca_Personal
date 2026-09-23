@@ -7,19 +7,18 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Aqui conectamos el archivo de estilos -->
   <link rel="stylesheet" href="diseno.css">
 </head>
 <body>
 
-  <!-- BARRA DE NAVEGACION -->
+  <!-- BARRA DE NAVEGACIÓN -->
   <header>
     <div class="contenedor barra">
       <a href="#inicio" class="nombre">Diego Ayala</a>
 
       <ul class="menu" id="menu">
         <li><a href="#formacion">Formacion academica</a></li>
-        <li><a href="#logros">Logros academicos</a></li>
+        <li><a href="#logros">Logros académicos</a></li>
         <li><a href="#voluntariado">Voluntariado</a></li>
         <li><a href="#portafolio">Portafolio</a></li>
         <li><a href="#curriculo">Curriculo</a></li>
@@ -28,118 +27,130 @@
   </header>
 
   <!-- SECCION DE INICIO -->
-  <section id="inicio" class="hero">
-    <div class="contenedor">
-      <p class="etiqueta">marca personal</p>
-      <!-- EDITA AQUI: tu titular -->
-      <h1>Escribe aqui tu titular en una frase.</h1>
-      <!-- EDITA AQUI: parrafo(s) sobre ti -->
-      <p>Hola, soy [tu nombre]. Escribe aqui quien eres y que te caracteriza.</p>
-      <p>Escribe un segundo parrafo sobre lo que te interesa o hacia donde vas.</p>
-      <img src="foto.jpeg" aling>
+ <section id="inicio" class="hero">
+  <div class="contenedor">
+    <div class="texto">
+      <h2>Marca Personal</h2><br>
+      <p>Soy Diego Ayala. Soy carismático por naturaleza
+         y me encanta relacionarme con las personas, pero mi verdadera pasión está en la tecnología,
+         me apasiona aprender, experimentar y descubrir todo lo que se puede crear con ella.</p>
+      <p>Me interesa seguir aprendiendo sobre tecnología y crecer como profesional, buscando
+         siempre nuevas formas de aportar valor a través de lo que hago, sin perder esa conexión 
+         genuina con las personas a mi alrededor.</p>
     </div>
-  </section>
+    <div class="foto-wrapper">
+      <img src="foto.jpeg" alt="Foto de perfil">
+    </div>
+  </div>
+</section>
 
-  <!-- FORMACION ACADEMICA -->
+  <!-- FORMACIÓN ACADÉMICA -->
   <section id="formacion" class="seccion">
     <div class="contenedor">
-      <h2>Formacion academica</h2>
+      <h2>Formación académica</h2>
 
       <div class="fila">
-        <strong>Bachillerato</strong>
-        <span><!-- EDITA AQUI -->Institucion, especialidad y anos</span>
+  <strong>Bachillerato</strong>
+      <div class="fila-info">
+        <span>Instituto Nacional Joaquin Ernesto Cárdenas</span>
+      </div>
+     </div>
+      <div class="fila">
+        <strong>Programa ¡Supérate!</strong>
+        <span>Formación en Inglés, Informática y Valores</span>
       </div>
       <div class="fila">
-        <strong>Educacion basica</strong>
-        <span><!-- EDITA AQUI -->Institucion y anos</span>
-      </div>
-      <div class="fila">
-        <strong>Kinder</strong>
-        <span><!-- EDITA AQUI -->Institucion y ano</span>
-      </div>
-      <div class="fila">
-        <strong>Curso complementario</strong>
-        <span><!-- EDITA AQUI -->Ej. panaderia, corte y confeccion</span>
+        <strong>Educación básica</strong>
+        <span>Centro Escolar Herberth de Sola</span>
       </div>
     </div>
   </section>
 
-  <!-- LOGROS ACADEMICOS -->
-  <section id="logros" class="seccion">
-    <div class="contenedor">
-      <h2>Logros academicos</h2>
+<!-- LOGROS ACADÉMICOS -->
+<section id="logros" class="seccion">
+  <div class="contenedor">
+    <h2>Logros académicos</h2>
 
-      <div class="tarjetas">
-        <div class="tarjeta">
-          <div class="foto">Foto de medalla</div>
-          <h3>Medalla</h3>
-          <p><!-- EDITA AQUI -->Motivo y fecha</p>
+    <div class="tarjetas-grid">
+      <div class="tarjeta">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+          <img src="Excel-intermedio.png" alt="Certificacion Microsoft Excel Intermedio" style="max-width: 100%; max-height: 100%; object-fit: contain;">
         </div>
-        <div class="tarjeta">
-          <div class="foto">Certificado</div>
-          <h3>Oratoria / curso</h3>
-          <p><!-- EDITA AQUI -->Nombre del certificado</p>
+        <h3>Certificacion Microsoft Excel Intermedio</h3>
+      </div>
+
+      <div class="tarjeta">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+          <img src="Expert.png" alt="Certificación Microsoft Excel Expert" style="max-width: 100%; max-height: 100%; object-fit: contain;">
         </div>
-        <div class="tarjeta">
-          <div class="foto">Diploma</div>
-          <h3>Concurso ganado</h3>
-          <p><!-- EDITA AQUI -->Describe el logro</p>
+        <h3>Certificación Microsoft Excel Expert</h3>
+      </div>
+
+      <div class="tarjeta">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+          <img src="JS.jpeg" alt="Introducción a JavaScript" style="max-width: 100%; max-height: 100%; object-fit: contain;">
         </div>
+        <h3>Introducción a JavaScript</h3>
+      </div>
+
+      <div class="tarjeta">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+          <img src="CSS.jpeg" alt="Introducción a CSS" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+        <h3>Introducción a CSS</h3>
+      </div>
+
+      <div class="tarjeta">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+          <img src="HTML.jpeg" alt="Introducción a HTML" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+        <h3>Introducción a HTML</h3>
+      </div>
+
+      <div class="tarjeta">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+          <img src="Redes.png" alt="Conceptos Basicos de Redes" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+        <h3>Conceptos Basicos de Redes</h3>
       </div>
     </div>
-  </section>
-
-  <!-- VOLUNTARIADO -->
-  <section id="voluntariado" class="seccion">
-    <div class="contenedor">
-      <h2>Voluntariado</h2>
-
-      <div class="tarjetas">
-        <div class="tarjeta">
-          <div class="foto">Foto: limpieza</div>
-          <p><!-- EDITA AQUI -->Descripcion breve</p>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">Foto: iglesia</div>
-          <p><!-- EDITA AQUI -->Descripcion breve</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  </div>
+</section>
   <!-- PORTAFOLIO -->
-  <section id="portafolio" class="seccion">
-    <div class="contenedor">
-      <h2>Portafolio</h2>
+ <section id="portafolio" class="seccion">
+  <div class="contenedor">
+    <h2>Portafolio</h2>
 
-      <div class="botones-filtro">
-        <button class="filtro activo" onclick="filtrarProyectos('todos')">Todos</button>
-        <button class="filtro" onclick="filtrarProyectos('tecnologia')">Tecnologia</button>
+    <div class="tarjetas" id="listaProyectos">
+      <div class="tarjeta proyecto" data-categoria="tecnologia">
+        <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+     <img src="Washdry.png" alt="Hackathon" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+    </div>
+        <h3>WashDry</h3>
+        <p> Entrega de productos de CarWash </p>
+    </div>
+      <div class="tarjeta proyecto" data-categoria="tecnologia">
+      <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+        <img src="EduMotion.png" alt="Expo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
       </div>
-
-      <div class="tarjetas" id="listaProyectos">
-        <div class="tarjeta proyecto" data-categoria="tecnologia">
-          <div class="foto">Hackaton</div>
-          <h3>Hackaton</h3>
-          <p><!-- EDITA AQUI -->Descripcion breve</p>
-        </div>
-        <div class="tarjeta proyecto" data-categoria="tecnologia">
-          <div class="foto">Expo</div>
-          <h3>Expo</h3>
-          <p><!-- EDITA AQUI -->Descripcion breve</p>
-        </div>
-        <div class="tarjeta proyecto" data-categoria="tecnologia">
-          <div class="foto">ExpoTech</div>
-          <h3>ExpoTech</h3>
-          <p><!-- EDITA AQUI -->Descripcion breve</p>
-        </div>
+        <h3>EduMotion</h3>
+         <p> Videos academicos de las tres materias de ¡Supérate!</p>
       </div>
-
-  <!-- CURRICULO -->
+      <div class="tarjeta proyecto" data-categoria="tecnologia">
+      <div class="foto" style="padding: 10px; overflow: hidden; background-color: #eef1f5; display: flex; align-items: center; justify-content: center;">
+        <img src="EmerTech.png" alt="ExpoTech" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+      </div>
+        <h3>EmerTech</h3>
+         <p> Aplicacion de emergencias </p>
+      </div>
+    </div>
+  </div>
+    </section>
+  <!-- CURRÍCULO -->
   <section id="curriculo" class="seccion">
     <div class="contenedor">
       <div class="caja-curriculo">
-        <h2>Descarga mi curriculo o escribeme</h2>
+        <h2>Descarga mi currículo o escríbeme</h2>
         <div class="botones-curriculo">
           <a href="#" class="boton" onclick="avisoCV(event)">Descargar CV (PDF)</a>
           <a href="mailto:tucorreo@ejemplo.com" class="boton boton-borde">Escribir correo</a>
@@ -148,7 +159,7 @@
     </div>
   </section>
 
-  <!-- Aqui conectamos el archivo de JavaScript -->
+  <!-- Aquí conectamos el archivo de JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
