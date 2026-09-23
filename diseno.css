@@ -1,0 +1,280 @@
+/* Reset básico: quitamos los márgenes y rellenos que trae el navegador por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #111827;
+  background-color: #f7f8fa;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Contenedor que centra el contenido y le da un ancho máximo */
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- BARRA DE NAVEGACIÓN ---------- */
+header {
+  background-color: #0f2a5c;
+  position: sticky;
+  top: 0;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.nombre {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #c7d2e8;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+#botonMenu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ---------- SECCIÓN DE INICIO ---------- */
+.hero {
+  padding: 80px 0 60px 0;
+}
+
+.etiqueta {
+  color: #2d7ff9;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #5b6474;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+/* ---------- SECCIONES GENERALES ---------- */
+.seccion {
+  padding: 50px 0;
+  border-top: 1px solid #e4e7eb;
+}
+
+.seccion h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.fila span {
+  color: #5b6474;
+  font-size: 14px;
+}
+
+/* ---------- TARJETAS (logros, voluntariado, portafolio) ---------- */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tarjeta {
+  background-color: white;
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  width: 30%;
+}
+
+.foto {
+  background-color: #eef1f5;
+  color: #9aa3b2;
+  height: 130px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+}
+
+.tarjeta h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tarjeta p {
+  color: #5b6474;
+  font-size: 14px;
+}
+
+/* Ocultamos los proyectos que no coinciden con el filtro elegido */
+.oculto {
+  display: none;
+}
+
+/* ---------- FILTROS DEL PORTAFOLIO ---------- */
+.botones-filtro {
+  margin-bottom: 20px;
+}
+
+.filtro {
+  background: none;
+  border: 1px solid #e4e7eb;
+  color: #5b6474;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.filtro.activo {
+  background-color: #0f2a5c;
+  color: white;
+  border-color: #0f2a5c;
+}
+
+.caja-repositorio {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.caja-repositorio span {
+  color: #5b6474;
+  font-size: 14px;
+}
+
+/* ---------- BOTONES ---------- */
+.boton {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #0f2a5c;
+  color: white;
+  border: 1px solid #0f2a5c;
+}
+
+.boton-borde {
+  background: none;
+  color: #0f2a5c;
+}
+
+/* ---------- CAJA DE CURRÍCULO ---------- */
+.caja-curriculo {
+  background-color: white;
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.botones-curriculo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  color: #5b6474;
+  font-size: 13px;
+  border-top: 1px solid #e4e7eb;
+}
+
+.dominio {
+  color: #2d7ff9;
+}
+
+/* ---------- VERSIÓN PARA CELULAR ---------- */
+@media (max-width: 700px) {
+  .tarjeta {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #0f2a5c;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+  }
+
+  /* Cuando el menú tiene la clase "mostrar", se hace visible */
+  .menu.mostrar {
+    display: flex;
+  }
+
+  .menu a {
+    display: block;
+    padding: 12px 0;
+  }
+
+  #botonMenu {
+    display: block;
+  }
+}
