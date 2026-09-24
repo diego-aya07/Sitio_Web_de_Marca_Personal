@@ -35,10 +35,20 @@ function filtrarProyectos(categoria) {
   event.target.classList.add("activo");
 }
 
-// ---------- AVISO PARA EL BOTÓN DE DESCARGAR CV ----------
-// Como todavía no hay un PDF real, mostramos un mensaje de aviso
-
-function avisoCV(evento) {
+// ---------- DESCARGAR CV AUTOMÁTICAMENTE ----------
+function descargarCV(evento) {
   evento.preventDefault();
-  alert("Aquí debes enlazar tu CV en PDF cuando lo tengas listo.");
+
+  fetch("CV_Diego_Ayala.pdf")
+    .then(function (respuesta) {
+      return respuesta.blob();
+    })
+    .then(function (archivo) {
+      var url = URL.createObjectURL(archivo);
+      var enlace = document.createElement("a");
+      enlace.href = url;
+      enlace.download = "CV_Diego_Ayala.pdf";
+      enlace.click();
+      URL.revokeObjectURL(url);
+    });
 }
