@@ -1,6 +1,3 @@
-// ---------- MENÚ PARA CELULAR ----------
-// Cuando se hace clic en el botón (☰), mostramos u ocultamos el menú
-
 var botonMenu = document.getElementById("botonMenu");
 var menu = document.getElementById("menu");
 
@@ -9,11 +6,10 @@ botonMenu.addEventListener("click", function () {
 });
 
 // ---------- FILTRO DEL PORTAFOLIO ----------
-// Esta función se llama desde los botones "Todos", "Tecnología" y "Artística"
 
 function filtrarProyectos(categoria) {
 
-  // 1) Mostramos u ocultamos cada proyecto según la categoría elegida
+
   var proyectos = document.querySelectorAll(".proyecto");
 
   for (var i = 0; i < proyectos.length; i++) {
@@ -27,7 +23,6 @@ function filtrarProyectos(categoria) {
     }
   }
 
-  // 2) Marcamos como "activo" el botón en el que se hizo clic
   var botones = document.querySelectorAll(".filtro");
   for (var j = 0; j < botones.length; j++) {
     botones[j].classList.remove("activo");
