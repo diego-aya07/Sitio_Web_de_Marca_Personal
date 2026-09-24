@@ -286,13 +286,20 @@ header {
     display: block;
   }
 
+  /* Inicio: la foto pasa arriba y el texto abajo, en vez de lado a lado */
   .hero {
     padding: 40px 20px;
   }
 
   .hero .contenedor {
     flex-direction: column;
+    align-items: stretch;
     gap: 24px;
+  }
+
+  .hero .texto {
+    flex: none;
+    width: 100%;
   }
 
   .foto-wrapper {
@@ -302,6 +309,7 @@ header {
     margin: 0 auto;
   }
 
+  /* Formación académica: que el dato pase abajo en vez de a la derecha */
   .fila {
     flex-direction: column;
     align-items: flex-start;
@@ -312,14 +320,17 @@ header {
     text-align: left;
   }
 
+  /* Logros académicos: 1 sola columna en pantallas muy chicas */
   .tarjetas-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Fotos de voluntariado: que no ocupen tanto alto en celular */
   .foto-logro {
     height: 200px;
   }
 
+  /* Currículo: botones uno debajo del otro, ocupando todo el ancho */
   .caja-curriculo {
     flex-direction: column;
     align-items: flex-start;
