@@ -16,7 +16,6 @@ a {
   color: inherit;
 }
 
-/* Contenedor que centra el contenido y le da un ancho máximo */
 .contenedor {
   max-width: 1000px;
   margin: 0 auto;
@@ -285,5 +284,53 @@ header {
 
   #botonMenu {
     display: block;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero .contenedor {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .foto-wrapper {
+    width: 100%;
+    max-width: 280px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .fila {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fila-info {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .tarjetas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-logro {
+    height: 200px;
+  }
+
+  .caja-curriculo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botones-curriculo {
+    width: 100%;
+  }
+
+  .botones-curriculo .boton {
+    flex: 1;
+    text-align: center;
   }
 }
