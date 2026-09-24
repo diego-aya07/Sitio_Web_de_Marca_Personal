@@ -105,6 +105,14 @@ header {
   z-index: 1;
 }
 
+.logo-marca {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
 .foto-wrapper img {
   display: block;
   width: 100%;
